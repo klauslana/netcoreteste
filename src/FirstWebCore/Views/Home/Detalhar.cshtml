@@ -1,0 +1,38 @@
+﻿@model FirstWebCore.Models.ModelMenuSistema
+@{
+    ViewData["Title"] = "Detalhes do item de menu do sistema";
+}
+<h2>@ViewData["Title"].</h2>
+
+<div class="row">
+    @Html.Label("Id:")
+    @Html.DisplayFor(m => m.ID)
+</div>
+<div class="row">
+    @Html.Label("Descrição:")
+    @Html.DisplayFor(m => m.Descricao)
+</div>
+<div class="row">
+    @Html.Label("É agrupador:")
+    @Html.DisplayFor(m => m.Agrupador)
+</div>
+<div class="row">
+    @Html.Label("Ícone utilizado:")
+    @Html.DisplayFor(m => m.ClasseIcone)
+</div>
+<div class="row">
+    @Html.Label("Link do menu:")
+    @Html.DisplayFor(m => m.Link)
+</div>
+<div class="row">
+    @Html.Label("Ordem Apresentação:")
+    @Html.DisplayFor(m => m.Ordem)
+</div>
+<div class="row">
+    @Html.Label("Id Menu Pai:")
+    @Html.DisplayFor(m => m.MeuPai)
+</div>
+<div class="row">
+    @Html.Label("Tem sub-menus:")
+    @Html.DisplayFor(m => m.SouPai)
+</div>
